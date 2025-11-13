@@ -2,6 +2,8 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import projectEnest from "../assets/projects/projectEnest.png";
+import projectTaskforge from "../assets/projects/projectTaskforge.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, ExpressJS , NestJS,  MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -16,8 +18,16 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 //     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
 //   },
 // ];
-
 export const PROJECTS = [
+  {
+    title: "ENest - Learning Management Platform",
+    image: projectEnest, // add your image import
+    description:
+      "Developed a comprehensive EdTech platform for students to purchase courses and test series, access study materials, connect with experts, and explore study abroad opportunities.",
+    technologies: ["NextJS", "MongoDB", "TypeScript", "ExpressJS"],
+    year: 2025,
+    url: "https://www.enestskill.com/",
+  },
   {
     title: "Aesthetics - Full Stack AI SaaS",
     image: project1,
@@ -25,16 +35,25 @@ export const PROJECTS = [
       "Developed an AI-based image editor and generator with 5 types of image transformations (Image Restore, Remove, Background Remover, Generative Fill, and Object Recolor) using Cloudinary AI API.",
     technologies: ["NextJS", "MongoDB", "TypeScript"],
     year: 2024,
-    url: "https://aesthetics-six.vercel.app/", // Example URL
+    url: "https://aesthetics-six.vercel.app/",
   },
   {
-    title: "Ensurance - Insurance Comparison AI bot",
+    title: "TaskForge - Project Management Platform",
+    image: projectTaskforge, // add your image import
+    description:
+      "Built a scalable project management platform to manage teams, users, tasks, timelines, and deadlines with full-stack architecture and AWS-based deployment.",
+    technologies: ["Next.js", "Express", "Prisma", "PostgreSQL", "TailwindCSS"],
+    year: 2025,
+    url: "https://master.dg5mg0h850rjc.amplifyapp.com/",
+  },
+  {
+    title: "Ensurance - Insurance Comparison AI Bot",
     image: project2,
     description:
       "Developed an AI-powered health insurance assistant, enabling user-friendly interactions and plan comparisons using the ChatPDF API.",
     technologies: ["HTML", "CSS", "JavaScript"],
     year: 2023,
-    url: "https://dot-config-iiits.github.io/ensurance/", // Example URL
+    url: "https://dot-config-iiits.github.io/ensurance/",
   },
   {
     title: "Cyber Tea - Cyber Security Workshop Website",
@@ -43,7 +62,7 @@ export const PROJECTS = [
       "Contributed to a platform for cybersecurity workshops by 20+ industry experts, offering dynamic registration for 100+ students and 50+ academia.",
     technologies: ["HTML", "CSS", "ReactJS", "Three.JS"],
     year: 2023,
-    url: "https://cybertea.vercel.app/", // Example URL
+    url: "https://cybertea.vercel.app/",
   },
   {
     title: "Movie Recommendation System",
@@ -52,9 +71,10 @@ export const PROJECTS = [
       "Developed a personalized movie recommendation system based on selected content using Python and data processing libraries.",
     technologies: ["Python", "Streamlit", "pandas", "NumPy"],
     year: 2024,
-    url: "https://vinayak-anand-movie-recommendation-system-app-qha2zo.streamlit.app/", // Example URL
+    url: "https://vinayak-anand-movie-recommendation-system-app-qha2zo.streamlit.app/",
   },
 ];
+
 
 
 export const CONTACT = {
